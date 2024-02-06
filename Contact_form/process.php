@@ -2,9 +2,9 @@
 
 $sent = false;
 $error = '';
-$emailTo = 'woloszynewelina1@gmail.com'; // or pull from PW page field
+$emailTo = 'woloszynewelina1@gmail.com'; 
 
-// sanitize form values or create empty
+
 $form = array(
     'name' => $sanitizer->text($input->post->fullname),
     'email' => $sanitizer->email($input->post->email),
