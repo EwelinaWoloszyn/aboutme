@@ -4,7 +4,7 @@ $(function () {
 
 $( "form" ).on( "submit", function(e) {
     var dataString = $(this).serialize();
-    
+    });
    
     $.ajax({
       type: "POST",
