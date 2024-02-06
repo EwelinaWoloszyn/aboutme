@@ -6,9 +6,9 @@ $emailTo = 'woloszynewelina1@gmail.com'; // or pull from PW page field
 
 // sanitize form values or create empty
 $form = array(
-    'fullname' => $sanitizer->text($input->post->fullname),
+    'name' => $sanitizer->text($input->post->fullname),
     'email' => $sanitizer->email($input->post->email),
-    'comments' => $sanitizer->textarea($input->post->comments),
+    'phone' => $sanitizer->textarea($input->post->comments),
     ); 
 
 // check if the form was submitted
