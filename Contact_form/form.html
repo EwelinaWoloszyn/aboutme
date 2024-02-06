@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Homepage CDO</title>
+<link rel="stylesheet" href="skeleton.css">
+<link rel="stylesheet" href="normalize.css">
+<script src="form.js"></script>
+<style> 
+* {
+  box-sizing: border-box;
+}
+/* latin */
+@font-face {
+  font-family: 'Koh Santepheap';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(BarlowCondensed400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+font-family: 'Barlow Condensed';
+src: url(BarlowCondensed-Light.ttf)format('truetype');
+    font-weight: 200;
+    font-style: normal;
+
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(BarlowCondensed-Light.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+  /* latin */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(BarlowCondensed-LightL.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+body {
+  font-family: 'Barlow Condensed';
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+div#contact_form {
+  width: 800px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-evenly;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 40px;
+}
+div.input-box {
+  display: flex;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+div.input-box label {
+  display: inline-block;
+  margin: 10px 10px 10px 0;
+  width: 20%;
+}
+div.input-box input {
+  font-size: 1.5rem;
+  border: 1px solid #ccc;
+  padding: 4px 8px;
+  flex: 1;
+}
+input.button {
+  font-size: 1.5rem;
+  background: black;
+  color: white;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 4px 40px;
+}
+h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed';
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 0.8;
+}
+div.greetings {
+  text-align: center;
+  font-size: 1.2rem;
+
+  background-size: 50px;
+}
+div.input-box input.error {
+    border: 2px dashed red;
+    background: #fee;
+}
+div.input-box label.error {
+    color: red;
+    font-size: 1rem;
+    text-align: right;
+    width: 100%;
+    margin: 10px 0;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+
+<div id="contact_form">
+  <form name="contact" action="">
+    <fieldset>
+      <div class="input-box">
+      <label for="name" id="name_label">Name</label>
+      <input type="text" name="name" id="name" minlength="3" placeholder="Monty" class="text-input" required/>
+      </div>
+      
+      <div class="input-box">
+      <label for="email" id="email_label">Email</label>
+      <input type="email" name="email" id="email" placeholder="example@tutsplus.com" class="text-input"/>
+      </div>
+      
+      <div class="input-box">
+      <label for="phone" id="phone_label">Phone</label>
+      <input type="tel" name="phone" id="phone" class="text-input" placeholder="856-261-9988"/>
+      </div>
+      
+      <input type="submit" name="submit" class="button" id="submit_btn" value="Send" />
+    </fieldset>
+  </form>
+    <div class="greetings">
+    <h1>Contact US</h1>
+      <p>We are waiting to hear from you!</p>
+    </div>
+  </div></div>
+  </body>
+  </html>
