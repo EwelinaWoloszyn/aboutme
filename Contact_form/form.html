@@ -119,17 +119,17 @@ div.input-box label.error {
     <fieldset>
       <div class="input-box">
       <label for="name" id="name_label">Name</label>
-      <input type="text" name="name" id="name" minlength="3" placeholder="Monty" class="text-input" required/>
+      <input type="text" name="name" id="name" minlength="3" placeholder="Monty" class="text-input" autocomplete="name" required/>
       </div>
       
       <div class="input-box">
       <label for="email" id="email_label">Email</label>
-      <input type="email" name="email" id="email" placeholder="example@tutsplus.com" class="text-input"/>
+      <input type="email" name="email" id="email" placeholder="example@tutsplus.com" class="text-input"autocomplete="email" />
       </div>
       
       <div class="input-box">
       <label for="phone" id="phone_label">Phone</label>
-      <input type="tel" name="phone" id="phone" class="text-input" placeholder="856-261-9988"/>
+      <input type="tel" name="phone" id="phone" class="text-input" placeholder="856-261-9988"autocomplete="phone"/>
       </div>
       
       <input type="submit" name="submit" class="button" id="submit_btn" value="Send" />
