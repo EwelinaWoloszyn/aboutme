@@ -1,6 +1,6 @@
 $(function () {
   $("form").validate();
-});
+
 
 $( "form" ).on( "submit", function(e) {
     var dataString = $(this).serialize();
